@@ -70,7 +70,6 @@ button {
     .container {
         max-width: 1158px;
         padding: 0 15px;
-        margin: 0 auto;
     }
 }
 
@@ -219,5 +218,83 @@ button {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
+    }
+}
+
+
+/* _________PAGE-HERO____________ */
+
+
+.page-hero {
+    background-color: #2e2f42;
+    padding: 72px 0 72px;
+    max-width: 320px;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/office-bg-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    max-width: 216px;
+    margin-left: auto;
+    margin-bottom: 72px;
+    margin-right: auto;
+}
+
+.hero-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    background-color: #4d5ae5;
+    border-radius: 4px;
+    border: none;
+    min-width: 169px;
+    display: block;
+    padding: 16px 32px;
+    margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: #404bbf;
+}
+
+@media screen and (min-width: 768px) {
+    .page-hero {
+        padding: 112px 0 112px;
+        max-width: 768px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/office-bg-tablet.jpg);
+    }
+
+    .hero-title {
+        font-size: 56px;
+        max-width: 496px;
+        margin-bottom: 36px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .page-hero {
+        padding: 188px 0 188px;
+        max-width: 1440px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/office-bg.jpg);
     }
 }
