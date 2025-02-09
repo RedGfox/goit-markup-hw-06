@@ -75,6 +75,10 @@ button {
 
 /* --------------PAGE-HEADER--------------- */
 
+
+/* --------------MOBAIL--------------- */
+
+
 .page-header {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
@@ -125,6 +129,85 @@ button {
     display: block;
     fill: #2f2f37;
 }
+
+.mobail-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobail-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.mobail-menu-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    padding-top: 72px;
+    padding-bottom: 40px;
+}
+
+.mobail-menu-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e7e9fc;
+    width: 24px;
+    height: 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-close-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobail-menu-close:hover,
+.mobail-menu-close:focus {
+    background-color: #404bbf;
+    border: none;
+}
+
+.mobail-menu-close:hover .menu-close-icon,
+.mobail-menu-close:focus .menu-close-icon {
+    fill: #fff;
+}
+
+.mobail-menu-nav {
+    margin-bottom: auto;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .mobail-menu {
+        display: none;
+    }
+}
+
+
+/* -------------TABLET---------------- */
+
 
 @media screen and (min-width: 768px) {
     .burger-btn {
@@ -202,6 +285,11 @@ button {
     }
 }
 
+
+
+/* --------------PC--------------- */
+
+
 @media screen and (min-width: 1158px) {
     .header-logo {
         margin-right: 76px;
@@ -225,6 +313,9 @@ button {
 /* _________PAGE-HERO____________ */
 
 
+/* --------------MOBAIL--------------- */
+
+
 .page-hero {
     background-color: #2e2f42;
     padding: 72px 0 72px;
@@ -236,6 +327,14 @@ button {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+@media screen and (min-resolution: 2x) {
+    .page-hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/office-bg-mob-2x.jpg);
+    }
 }
 
 .hero-title {
@@ -273,6 +372,10 @@ button {
     background-color: #404bbf;
 }
 
+
+/* -------------TABLET---------------- */
+
+
 @media screen and (min-width: 768px) {
     .page-hero {
         padding: 112px 0 112px;
@@ -281,13 +384,24 @@ button {
                 rgba(46, 47, 66, 0.7)),
             url(../images/office-bg-tablet.jpg);
     }
+}
 
-    .hero-title {
-        font-size: 56px;
-        max-width: 496px;
-        margin-bottom: 36px;
+@media screen and (min-resolution: 2x) {
+    .page-hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/office-bg-tablet-2x.jpg);
     }
 }
+
+.hero-title {
+    font-size: 56px;
+    max-width: 496px;
+    margin-bottom: 36px;
+}
+
+
+/* --------------PC--------------- */
 
 @media screen and (min-width: 1158px) {
     .page-hero {
@@ -296,5 +410,17 @@ button {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url(../images/office-bg.jpg);
+    }
+
+    .hero-title {
+        margin-bottom: 48px;
+    }
+}
+
+@media screen and (min-resolution: 2x) {
+    .page-hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/office-bg-2x.jpg);
     }
 }
