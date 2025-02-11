@@ -83,9 +83,9 @@ ol {
   gap: 40px;
 } */
 
-/* .nav-item {
-} */
-/* .nav-link {
+/* .nav-item {}
+
+.nav-link {
   display: block;
   padding: 24px 0 24px;
   font-weight: 500;
@@ -94,13 +94,13 @@ ol {
   letter-spacing: 0.02em;
   color: #2e2f42;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.nav-link.current {
+/* .nav-link.current {
   position: relative;
-}
+} */
 
-.nav-link.current::after {
+/* .nav-link.current {
   content: '';
   position: absolute;
   left: 0;
@@ -130,9 +130,7 @@ ol {
   gap: 40px;
 } */
 
-/* .contacts-item {
-} */
-.contacts-link {
+/* .contacts-link {
   display: block;
   padding: 24px 0 24px;
   font-size: 16px;
@@ -141,7 +139,7 @@ ol {
   letter-spacing: 0.02em;
   color: #434455;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /* _________PAGE-HERO____________ */
 
@@ -209,20 +207,20 @@ ol {
   overflow: hidden;
 } */
 
-.page-feature {
+/* .page-feature {
   padding: 120px 0 120px;
-}
+} */
 
-.feature-list {
+/* .feature-list {
   display: flex;
   gap: 24px;
-}
+} */
 
-.feature-itim {
+/* .feature-itim {
   width: calc((100% - 72px) / 4);
-}
+} */
 
-.feature-icon {
+/* .feature-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -231,9 +229,9 @@ ol {
   border-radius: 4px;
   height: 112px;
   margin-bottom: 8px;
-}
+} */
 
-.feature-title {
+/* .feature-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -247,7 +245,7 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.01em;
   color: #434455;
-}
+} */
 
 /* ________PAGE-OUR-TEAM_____________ */
 
@@ -304,11 +302,11 @@ ol {
   margin-bottom: 8px;
 }
 
-.socialmedia-list {
+/* .socialmedia-list {
   display: flex;
   gap: 24px;
   justify-content: center;
-}
+} */
 
 .socialmedia-list .socialmedia-item {
   width: 40px;
